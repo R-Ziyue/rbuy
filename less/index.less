@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "variable";
+@import "adapter";
+
+//头部header-----------------------------------
+.header {
+  height: 50px;
+  background-color: @Color;
+
+  .left {
+    float: left;
+    height: 100%;
+    padding: 12px;
+    //box-sizing: border-box;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    float: right;
+    height: 100%;
+    padding: 8px;
+
+    img {
+      //图片自动伸缩
+      height: 100%;
+    }
+  }
+}
+
+//搜索search------------------------------------------------
+.search {
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 10px;
+
+  .si {
+    padding-right: 73px;
+    height: 100%;
+
+    .left {
+      width: 100%;
+      height: 100%;
+      background-color: #F1F1F1;
+      border-radius: 15px;
+      padding-left: 20px;
+    }
+  }
+
+  .right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 63px;
+    height: 30px;
+    background-color: @Color;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+  }
+}
+
+//导航nav--------------------------------------------
+.nav {
+  background-color: #fff;
+  padding: 10px 0 20px;
+  margin-bottom: 10px;
+
+
+
+  //隐藏的类
+  .hidden{
+    display: none;
+  }
+
+  li {
+    float: left;
+    width: 25%;
+    text-align: center;
+
+    img {
+      width: 80/50rem;
+      display: block;
+      margin: 10/50rem  auto;
+    }
+  }
+}
+
+//推荐content-----------------------------------
+.content {
+
+  .title {
+    height: 35px;
+    padding-left: 10px;
+    line-height: 35px;
+    //渐变  默认是从上到下的
+    background: linear-gradient(#ffaf47, #ff9000);
+    font-size: 16px;
+    color: #fff;
+
+    img {
+      float: right;
+      height: 20px;
+      margin: 8px 8px;
+    }
+  }
+
+  .info {
+
+    li {
+      height: 120px;
+      padding: 10px;
+      background-color: #fff;
+      border-bottom: 1px solid #e7e7e7;
+
+      img {
+        height: 100px;
+        width: 100px;
+        margin-right: 10px;
+      }
+      .price {
+        color: @Color;
+      }
+      p {
+        margin-top: 40px;
+        font-size: 12px;
+
+        span {
+          font-size: 12px;
+          float: right;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
+
+//更多more-----------------------------------------
+.more {
+  background-color: #fff;
+  height: 52px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  a {
+    display: block;
+    height: 100%;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 32px;
+    background: linear-gradient(#fff, #f4f4f4);
+  }
+}
+
+//排行show--------------------------------------
+.show {
+
+  .title {
+    height: 35px;
+    padding-left: 10px;
+    line-height: 35px;
+    //渐变  默认是从上到下的
+    background: linear-gradient(#ffaf47, #ff9000);
+    font-size: 16px;
+    color: #fff;
+
+    img {
+      float: right;
+      height: 20px;
+      margin: 8px 8px;
+    }
+  }
+}
+
+//链接link-------------------------------------------------------
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 34px;
+
+  a {
+    float: left;
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    line-height: 34px;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      display: inline-block;
+      height: 15px;
+    }
+  }
+}
+
+//底部footer--------------------------------------------
+.footer {
+  height: 60px;
+
+  p{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+
+    .app{
+      color: #f00;
+    }
+  }
+}

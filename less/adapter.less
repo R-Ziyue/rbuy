@@ -1,0 +1,24 @@
+//设置页面的html的字体大小，通过媒体查询。
+//320 360 375 384 400 414 424 460 480 540 720 750
+
+//约定好了，把设计图分成了15rem
+/* 屏幕的适配 */
+.adapter(@width:320px) {
+  @media (min-width: @width) {
+    html {
+      font-size: round(@width/15,2);
+    }
+  }
+}
+.adapter();
+.adapter(360px);
+.adapter(375px);
+.adapter(384px);
+.adapter(400px);
+.adapter(414px);
+.adapter(424px);
+.adapter(460px);
+.adapter(480px);
+.adapter(540px);
+.adapter(720px);
+.adapter(750px);

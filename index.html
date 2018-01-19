@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>棠哥慢慢买首页</title>
+  <link rel="icon" href="./tangge.ico">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <!--这里放置真实显示的DOM内容-->
+    <!--头部-->
+    <div class="header">
+      <div class="left">
+        <img src="./images/header_logo.png" alt="">
+      </div>
+      <div class="right">
+        <img src="./images/header_app.png" alt="">
+      </div>
+    </div>
+
+    <!--搜索-->
+    <div class="search">
+      <button class="right">搜索</button>
+      <div class="si">
+        <input type="text" class="left" placeholder="请输入你想比价的商品">
+      </div>
+    </div>
+
+    <!--导航-->
+    <div class="nav">
+      <ul class="clearfix ">
+        <!--模板引擎-->
+      </ul>
+    </div>
+
+    <!--推荐-->
+    <div class="content">
+      <!--标题-->
+      <div class="title">
+        <span>超值折扣推荐</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+      </div>
+
+      <!--内容-->
+      <ul class="info clearfix">
+        <!--模板引擎渲染-->
+      </ul>
+    </div>
+
+    <!--更多-->
+    <div class="more">
+      <a href="moneyctrl.html">更多优惠信息 »</a>
+    </div>
+
+    <!--排行-->
+    <div class="show">
+      <div class="title">
+        <span>品牌排行</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
+      </div>
+    </div>
+
+    <!--链接-->
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+</div>
+
+<!--模板引擎-->
+<!--导航的模板-->
+<script type="text/html" id="template_nav">
+  {{each result v i}}
+  <li>
+    <a href="{{ v.titlehref }}" data-id="{{ v.indexmenuId }}">
+      <!--模板引擎的一种语法  解析html格式-->
+      {{@v.img }}
+      <p>{{ v.name }}</p>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+<!--推荐内容的模板-->
+<script type="text/html" id="template_info">
+  {{each result v i}}
+  <li>
+    <a href="moneyproduct.html?productid={{v.productId}}" data-id="">
+      {{@v.productImgSm}}
+      <div class="mui-media-body">
+        {{v.productName}}
+        <span class="price">{{v.productPinkage}}</span>
+        <p class='mui-ellipsis'>{{v.productFrom}} | {{v.productTime}}
+          <span class="mui-icon mui-icon mui-icon-chat"> {{v.productComCount}}</span>
+        </p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+
+<!--<script src="./lib/zepto/zepto.min.js"></script>-->
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/jquery-1.12.4.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/para.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
