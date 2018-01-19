@@ -4,10 +4,10 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="UTF-8">
-  <title>棠哥慢慢买首页</title>
+  <title>棠哥慢慢买分类页</title>
   <link rel="icon" href="./tangge.ico">
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/category.css">
 </head>
 <body>
 
@@ -32,39 +32,16 @@
       </div>
     </div>
 
-    <!--导航-->
-    <div class="nav">
-      <ul class="clearfix ">
+    <!--不同的部分-->
+
+    <!--分类-->
+    <!--分类标题-->
+    <div class="category">
+      <ul class="mui-table-view title">
         <!--模板引擎-->
       </ul>
     </div>
 
-    <!--推荐-->
-    <div class="content">
-      <!--标题-->
-      <div class="title">
-        <span>超值折扣推荐</span>
-        <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
-      </div>
-
-      <!--内容-->
-      <ul class="info clearfix">
-        <!--模板引擎渲染-->
-      </ul>
-    </div>
-
-    <!--更多-->
-    <div class="more">
-      <a href="moneyctrl.html">更多优惠信息 »</a>
-    </div>
-
-    <!--排行-->
-    <div class="show">
-      <div class="title">
-        <span>品牌排行</span>
-        <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
-      </div>
-    </div>
 
     <!--链接-->
     <div class="link">
@@ -84,43 +61,29 @@
 </div>
 
 <!--模板引擎-->
-<!--导航的模板-->
-<script type="text/html" id="template_nav">
+
+<!--标题模板-->
+<script type="text/html" id="template_title">
   {{each result v i}}
-  <li>
-    <a href="{{ v.titlehref }}" data-id="{{ v.indexmenuId }}">
-      <!--模板引擎的一种语法  解析html格式-->
-      {{@v.img }}
-      <p>{{ v.name }}</p>
-    </a>
+  <li class="mui-table-view-cell mui-collapse">
+    <a class="mui-navigate-right btn_son" href="#" data-id="{{v.titleId}}">{{v.title}}</a>
+    <ul class="mui-collapse-content"></ul>
   </li>
   {{/each}}
 </script>
 
-<!--推荐内容的模板-->
-<script type="text/html" id="template_info">
+<!--小标题-->
+<script type="text/html" id="template_son">
   {{each result v i}}
-  <li>
-    <a href="moneyproduct.html?productid={{v.productId}}" data-id="">
-      {{@v.productImgSm}}
-      <div class="mui-media-body">
-        {{v.productName}}
-        <span class="price">{{v.productPinkage}}</span>
-        <p class='mui-ellipsis'>{{v.productFrom}} | {{v.productTime}}
-          <span class="mui-icon mui-icon mui-icon-chat"> {{v.productComCount}}</span>
-        </p>
-      </div>
-    </a>
-  </li>
+    <li><a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}&pageid=1">{{v.category}}</a></li>
   {{/each}}
 </script>
-
 
 <!--<script src="./lib/zepto/zepto.min.js"></script>-->
 <script src="./lib/mui/js/mui.min.js"></script>
 <script src="./lib/jquery-1.12.4.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/para.js"></script>
-<script src="./js/index.js"></script>
+<script src="./js/category.js"></script>
 </body>
 </html>
