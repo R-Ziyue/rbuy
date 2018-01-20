@@ -29,7 +29,6 @@ $(function () {
   $.ajax({
     type: 'get',
     url: 'http://' + ip + ':9090/api/getcategorybyid',
-    dataType: 'json',
     data: {categoryid: categoryId},
     success: function (info) {
       $('.nav .left').html(template('template_nav', info))

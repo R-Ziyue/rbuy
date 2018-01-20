@@ -1,0 +1,275 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "variable";
+@import "adapter";
+
+//头部header-----------------------------------
+.header {
+  height: 50px;
+  background-color: @Color;
+
+  .left {
+    float: left;
+    height: 100%;
+    padding: 12px;
+    //box-sizing: border-box;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    float: right;
+    height: 100%;
+    padding: 8px;
+
+    img {
+      //图片自动伸缩
+      height: 100%;
+    }
+  }
+}
+
+//搜索search------------------------------------------------
+.search {
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+
+  .si {
+    padding-right: 73px;
+    height: 100%;
+
+    .left {
+      width: 100%;
+      height: 100%;
+      background-color: #F1F1F1;
+      border-radius: 15px;
+      padding-left: 20px;
+    }
+  }
+
+  .right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 63px;
+    height: 30px;
+    background-color: @Color;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+  }
+}
+
+//导航nav---------------------------------------------------------
+.nav {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  background-image: linear-gradient(#fff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+
+  button {
+    height: 30px;
+    border-radius: 5px;
+    padding-top: 4px;
+    margin: 5px;
+    margin-right: 10px;
+    background-image: linear-gradient(#ebebeb, #fff);
+  }
+}
+
+//商品详情product-------------------------------------------------
+.product {
+  height: 400px;
+  background-color: #fff;
+  position: relative;
+
+  .name {
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .img {
+
+    img{
+      display: block;
+      margin:0 auto;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin:24px;
+    }
+  }
+
+
+}
+
+
+//小表格tab------------------------------------------------------
+.tab{
+  height: 40px;
+
+
+  li{
+    float: left;
+    line-height: 40px;
+    height: 100%;
+    width: 33.33%;
+    border:1px solid #C14D00;
+    border-left: none;
+    text-align: center;
+
+    a{
+      color: #fff;
+      font-size: 16px;
+    }
+
+
+    &:nth-child(1){
+      background: linear-gradient(#ffa632,#ff9000);
+    }
+    &:nth-child(2){
+      background: linear-gradient(#ffd050,#ffbb00);
+    }
+    &:nth-child(3){
+      background: linear-gradient(#ffd050,#ffd050);
+      border-right: none;
+    }
+
+  }
+}
+
+//后台传过来的数据back-------------------------------------------------------
+.back{
+  background-color: #fff;
+  height:40px;
+  padding: 8px;
+
+  .p_pic{
+    line-height: 24px;
+
+    img{
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+}
+
+//备注note--------------------------------------------------------------
+.note{
+  padding-left: 10px;
+  padding-bottom: 10px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #888;
+  background-color: #fff;
+  border-top: 1px solid #bbb;
+  border-bottom: 4px solid #747474;
+}
+
+//评论comment------------------------------------------------------------
+.comment{
+background-color: #fff;
+
+
+  .title{
+    height: 40px;
+    background-color: #dbdbdb;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+  }
+
+  ul{
+
+
+    li{
+      padding: 10px;
+      line-height: 20px;
+      font-size: 12px;
+      color: #666;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
+
+
+//查看更多more------------------------------------------------------
+.more{
+  height: 50px;
+  background-color: #fff;
+  padding-top: 10px;
+
+  a{
+    display: block;
+    height: 32px;
+    width: 90%;
+    margin: 0 auto;
+    border:1px solid #dcdcdc;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 10px;
+    background: linear-gradient(#f1f1f1,#d4d4d4);
+  }
+}
+
+
+
+//链接link-------------------------------------------------------
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 34px;
+
+  a {
+    float: left;
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    line-height: 34px;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      display: inline-block;
+      height: 15px;
+    }
+  }
+}
+
+//底部footer--------------------------------------------
+.footer {
+  height: 60px;
+
+  p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+
+    .app {
+      color: #f00;
+    }
+  }
+}
