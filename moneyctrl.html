@@ -4,10 +4,10 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="UTF-8">
-  <title>棠哥慢慢买首页</title>
+  <title>棠哥慢慢买省钱控</title>
   <link rel="icon" href="./tangge.ico">
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-  <link rel="stylesheet" href="./css/productlist.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
 </head>
 <body>
 
@@ -24,30 +24,14 @@
       </div>
     </div>
 
-    <!--搜索-->
-    <div class="search">
-      <button class="right">搜索</button>
-      <div class="si">
-        <input type="text" class="left" placeholder="请输入你想比价的商品">
-      </div>
-    </div>
-
-    <!--导航-->
-    <div class="nav">
-      <div class="right mui-pull-right">
-        <button type="button" class="mui-btn mui-btn-outlined">筛选</button>
-      </div>
-      <div class="left">
-        <!--模板引擎-->
-      </div>
-    </div>
-
     <!--商品内容-->
     <div class="content">
       <ul class="mui-table-view">
         <!--模板引擎-->
       </ul>
     </div>
+
+
 
     <!--分页-->
     <div class="page">
@@ -63,6 +47,7 @@
         <button class="next">下一页</button>
       </div>
     </div>
+
 
     <!--链接-->
     <div class="link">
@@ -82,29 +67,19 @@
 </div>
 
 <!--模板引擎-->
-<!--导航模板-->
-<script type="text/html" id="template_nav">
-  {{each result v i}}
-  <a href="index.html">首页</a>
-  >
-  <a href="category.html">全部分类</a>
-  >
-  <a href="#">{{v.category}}</a>
-  {{/each}}
-</script>
-
 
 <!--商品列表导航-->
 <script type="text/html" id="template_content">
   {{each result v i}}
-  <li class="mui-table-view-cell mui-media">
-    <a href="bijia.html?productid={{v.productId}}" data-id="">
-      {{@v.productImg}}
+  <li>
+    <a href="moneyproduct.html?productid={{v.productId}}" data-id="">
+      {{@v.productImg2}}
       <div class="mui-media-body">
         {{v.productName}}
-        <p class='mui-ellipsis'>{{v.productPrice}}</p>
-        <span>{{v.productQuote}}</span>
-        <span>{{v.productCom}}</span>
+        <span class="price">{{v.productPinkage}}</span>
+        <p class='mui-ellipsis'>{{v.productFrom}} | {{v.productTime}}
+          <span class="mui-icon mui-icon mui-icon-chat"> {{v.productComCount}}</span>
+        </p>
       </div>
     </a>
   </li>
@@ -118,11 +93,12 @@
   <% } %>
 </script>
 
+
 <!--<script src="./lib/zepto/zepto.min.js"></script>-->
 <script src="./lib/mui/js/mui.min.js"></script>
 <script src="./lib/jquery-1.12.4.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/para.js"></script>
-<script src="./js/productlist.js"></script>
+<script src="./js/moneyctrl.js"></script>
 </body>
 </html>

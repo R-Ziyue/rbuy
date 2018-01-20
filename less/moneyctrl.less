@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "variable";
+@import "adapter";
+
+//头部header-----------------------------------
+.header {
+  height: 50px;
+  background-color: @Color;
+
+  .left {
+    float: left;
+    height: 100%;
+    padding: 12px;
+    //box-sizing: border-box;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    float: right;
+    height: 100%;
+    padding: 8px;
+
+    img {
+      //图片自动伸缩
+      height: 100%;
+    }
+  }
+}
+
+//内容content------------------------------------
+.content {
+
+  .mui-table-view{
+    li {
+      height: 120px;
+      padding: 10px;
+      background-color: #fff;
+      border-bottom: 1px solid #e7e7e7;
+
+      img {
+        height: 100px;
+        width: 100px;
+        margin-right: 10px;
+        min-width: 100px;
+      }
+      .price {
+        color: @Color;
+      }
+      p {
+        margin-top: 40px;
+        font-size: 12px;
+
+        span {
+          font-size: 12px;
+          float: right;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+
+
+//分页page----------------------------------------------
+.page{
+  height: 50px;
+  background-color: #fff;
+  padding: 8px;
+
+  div{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+
+    button{
+      background-image: linear-gradient(#fff,#ebebeb);
+    }
+    select{
+      width: 80px;
+      height: 36px;
+      border:1px solid #bababa !important;
+      padding: 0;
+      padding-left: 10px;
+      //渲染风格
+      //appearance:none;
+      //-moz-appearance:none;
+      //-webkit-appearance:none;
+      /*设置箭头*/
+      background: url("../images/arrow.png") no-repeat scroll right center transparent;
+    }
+  }
+
+
+}
+
+//链接link-------------------------------------------------------
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 34px;
+
+  a {
+    float: left;
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    line-height: 34px;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      display: inline-block;
+      height: 15px;
+    }
+  }
+}
+
+//底部footer--------------------------------------------
+.footer {
+  height: 60px;
+
+  p{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+
+    .app{
+      color: #f00;
+    }
+  }
+}

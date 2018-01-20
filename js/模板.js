@@ -1,9 +1,6 @@
 /**
  * Created by 梓越 on 2018/1/19.
  */
-/**
- * Created by 梓越 on 2018/1/19.
- */
 //本页面实现首页的全部功能
 //url: "http://" + ip + ":9090/api/getindexmenu",
 

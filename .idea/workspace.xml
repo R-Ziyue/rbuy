@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf3d384e-1e47-4fa8-8a62-9c6ec0c91a58" name="默认的" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/para.js" afterPath="$PROJECT_DIR$/js/para.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bijia.js" afterPath="$PROJECT_DIR$/js/bijia.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/productlist.js" afterPath="$PROJECT_DIR$/js/productlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/模板.html" afterPath="$PROJECT_DIR$/模板.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/模板.js" afterPath="$PROJECT_DIR$/js/模板.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/productlist.html" afterPath="$PROJECT_DIR$/productlist.html" />
     </list>
     <ignored path="棠哥慢慢买项目.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,26 +28,12 @@
     <splitter split-orientation="horizontal" split-proportion="0.39499035">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="模板.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/模板.html">
+          <file leaf-file-name="moneyproduct.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/moneyproduct.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-16.636364">
-                  <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+                <state vertical-scroll-proportion="0.1245509">
+                  <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bijia.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/bijia.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6263473">
-                  <caret line="155" column="36" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
-                  <folding>
-                    <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#9;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -57,65 +42,26 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="模板.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/less/模板.less">
+          <file leaf-file-name="moneyctrl.less" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/less/moneyctrl.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.970588">
-                  <caret line="70" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.3825">
+                  <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
                   <folding>
                     <element signature="e#149#453#0" expanded="false" />
-                    <element signature="e#522#1066#0" expanded="false" />
-                    <element signature="e#1140#1504#0" expanded="false" />
-                    <element signature="e#1569#1703#0" expanded="false" />
+                    <element signature="e#1077#1652#0" expanded="false" />
+                    <element signature="e#1724#2088#0" expanded="false" />
+                    <element signature="e#2153#2287#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="模板.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/模板.js">
+          <file leaf-file-name="moneyctrl.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/moneyctrl.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#39#77#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bijia.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/less/bijia.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-16.352942">
-                  <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#149#453#0" expanded="false" />
-                    <element signature="e#522#1043#0" expanded="false" />
-                    <element signature="e#3909#4273#0" expanded="false" />
-                    <element signature="e#4338#4474#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bijia.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/bijia.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5391705">
-                  <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="productlist.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/productlist.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+                  <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
                   <folding>
                     <element signature="e#0#38#0" expanded="false" />
                   </folding>
@@ -131,9 +77,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="less file" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -153,16 +99,20 @@
         <option value="$PROJECT_DIR$/category.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/index.js" />
-        <option value="$PROJECT_DIR$/js/模板.js" />
         <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/less/productlist.less" />
-        <option value="$PROJECT_DIR$/productlist.html" />
         <option value="$PROJECT_DIR$/js/para.js" />
         <option value="$PROJECT_DIR$/模板.html" />
         <option value="$PROJECT_DIR$/less/bijia.less" />
-        <option value="$PROJECT_DIR$/js/productlist.js" />
         <option value="$PROJECT_DIR$/bijia.html" />
         <option value="$PROJECT_DIR$/js/bijia.js" />
+        <option value="$PROJECT_DIR$/js/productlist.js" />
+        <option value="$PROJECT_DIR$/productlist.html" />
+        <option value="$PROJECT_DIR$/js/模板.js" />
+        <option value="$PROJECT_DIR$/moneyctrl.html" />
+        <option value="$PROJECT_DIR$/js/moneyctrl.js" />
+        <option value="$PROJECT_DIR$/less/moneyctrl.less" />
+        <option value="$PROJECT_DIR$/moneyproduct.html" />
       </list>
     </option>
   </component>
@@ -452,7 +402,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
-            <element signature="e#39#77#0" expanded="false" />
+            <element signature="e#0#38#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -609,10 +559,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/para.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.059907835">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bijia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.060606">
+          <caret line="129" column="20" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/productlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59907836">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bijia.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20967741">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/bijia.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.39">
+          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding>
+            <element signature="e#149#453#0" expanded="false" />
+            <element signature="e#522#1043#0" expanded="false" />
+            <element signature="e#3909#4273#0" expanded="false" />
+            <element signature="e#4338#4474#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/模板.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.030303">
+          <caret line="29" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/less/模板.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.970588">
-          <caret line="70" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.5882354">
+          <caret line="69" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
             <element signature="e#149#453#0" expanded="false" />
             <element signature="e#522#1066#0" expanded="false" />
@@ -622,9 +635,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/模板.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/less/productlist.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.1764708">
+        <state vertical-scroll-proportion="-0.42647058">
           <caret line="86" column="1" selection-start-line="69" selection-start-column="0" selection-end-line="86" selection-end-column="1" />
           <folding>
             <element signature="e#149#453#0" expanded="false" />
@@ -637,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/productlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6263473">
-          <caret line="116" column="12" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.48982036">
+          <caret line="110" column="11" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -647,76 +670,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/模板.js">
+    <entry file="file://$PROJECT_DIR$/js/moneyctrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#39#77#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/para.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.059907835">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/模板.html">
+    <entry file="file://$PROJECT_DIR$/less/moneyctrl.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.636364">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.3825">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="e#149#453#0" expanded="false" />
+            <element signature="e#1077#1652#0" expanded="false" />
+            <element signature="e#1724#2088#0" expanded="false" />
+            <element signature="e#2153#2287#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moneyctrl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5757576">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/bijia.less">
+    <entry file="file://$PROJECT_DIR$/moneyproduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.352942">
-          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-          <folding>
-            <element signature="e#149#453#0" expanded="false" />
-            <element signature="e#522#1043#0" expanded="false" />
-            <element signature="e#3909#4273#0" expanded="false" />
-            <element signature="e#4338#4474#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/productlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bijia.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6263473">
-          <caret line="155" column="36" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#9;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bijia.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5391705">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.1245509">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

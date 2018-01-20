@@ -32,6 +32,7 @@ $(function () {
     url: "http://" + ip + ":9090/api/getproduct",
     data: {productid: productId},
     success: function (info) {
+      //console.log(info);
       $('.product').html(template("template_product", info));
       //顺便渲染传过来的表格
       $('.back').html(template("template_back", info));
@@ -39,14 +40,16 @@ $(function () {
       //获取当前的页面的商品名称
       var name=info.result[0].productName;
       var newName=name.split(' ')[0];//截取后的商品名字
-
+      //console.log(newName);
 
       categoryId=info.result[0].categoryId;
       $.ajax({
         type: 'get',
         url: 'http://' + ip + ':9090/api/getcategorybyid',
-        data: {categoryid: productId},
+        data: {categoryid: categoryId},
         success: function (info) {
+          //console.log(newName);
+          info.result[0].newName=newName;
           //console.log(info);
           $('.nav .left').html(template('template_nav', info));
         }
