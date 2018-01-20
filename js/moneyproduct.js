@@ -22,65 +22,31 @@ $(function () {
     mui('.mui-scroll-wrapper').scroll().scrollTo(0, 0, 100);//100毫秒滚动到顶
   })
 
-//动态渲染页面  获取数据
-  var numPage;
-  var pageId=getSearch('pageid')||0;//从地址栏获取
-  //总页数
+
+//  动态渲染
+  var productId=getSearch('productid');//从地址栏获取
   $.ajax({
-    type: 'get',
-    url: 'http://' + ip + ':9090/api/getmoneyctrl',
-    data: {
-      pageid:pageId,
+    type:'get',
+    url: "http://" + ip + ":9090/api/getmoneyctrlproduct",
+    data:{
+      productid:productId,
     },
-    success: function (info) {
-      numPage = Math.ceil(info.totalCount / info.pagesize);
-      info.numPage=numPage;
-      info.pageid=pageId+1;
+    success:function (info) {
       console.log(info);
-      $('.mui-table-view').html(template('template_content', info));
-      //由于用的是mui的图文列表 所以需要在动态渲染之后给img标签加上这个类
-      $('.content img').addClass("mui-media-object mui-pull-left");
-
-      //  动态渲染分页按钮
-      $('#page').html(template('template_page', info));
-
-
+      $('.container').html(template('template_container',info));
+      $('.flist').html(template('template_list',info));
+      $('.comment').html(template('template_comment',info));
     }
   });
 
 
-  //4.分页功能
-  //上下翻页按钮功能实现
-  var url = 'moneyctrl.html';
-  //上翻页
-  $('.prev').on('click', function () {
-    //拼接字符串的方式  产生一个新的地址
-    if (pageId <= numPage && pageId > 0) {
-      var newUrl = url+'?pageid='+(pageId-1);
-      //点击的时候跳转
-      location.href = newUrl;
-    }
-  });
-  //下一页翻页
-  $('.next').on('click', function () {
-    //拼接字符串的方式  产生一个新的地址
-    if (pageId < numPage-1 && pageId >= 0) {
-      var newUrl = url+'?pageid='+(pageId+1);
-      //点击的时候跳转
-      location.href = newUrl;
-    }
-  });
-  //中间select选择翻页
-  $('#page').on('change',function () {
-    //拼接字符串的方式  产生一个新的地址
-    var id=$(this).val();
 
 
-    location.href=url+'?pageid='+(id-1);
-  });
 
 
-  //老师之前写的过去url中的数据的代码
+
+
+//老师之前写的过去url中的数据的代码
   /*获取地址栏所有的参数，返回一个对象*/
   function getSearchObj() {
     //1. 获取地址栏的参数
@@ -108,6 +74,5 @@ $(function () {
   function getSearch(key) {
     return +getSearchObj()[key];
   }
-
 
 });

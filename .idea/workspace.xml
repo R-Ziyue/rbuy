@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf3d384e-1e47-4fa8-8a62-9c6ec0c91a58" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bijia.js" afterPath="$PROJECT_DIR$/js/bijia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/productlist.js" afterPath="$PROJECT_DIR$/js/productlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/模板.js" afterPath="$PROJECT_DIR$/js/模板.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/productlist.html" afterPath="$PROJECT_DIR$/productlist.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/moneyctrl.css" afterPath="$PROJECT_DIR$/css/moneyctrl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/moneyctrl.js" afterPath="$PROJECT_DIR$/js/moneyctrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/moneyctrl.less" afterPath="$PROJECT_DIR$/less/moneyctrl.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moneyctrl.html" afterPath="$PROJECT_DIR$/moneyctrl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moneyproduct.html" afterPath="$PROJECT_DIR$/moneyproduct.html" />
     </list>
     <ignored path="棠哥慢慢买项目.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,9 +32,14 @@
           <file leaf-file-name="moneyproduct.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/moneyproduct.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.1245509">
-                  <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
-                  <folding />
+                <state vertical-scroll-proportion="0.6934132">
+                  <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+                  <folding>
+                    <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -42,29 +48,25 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="moneyctrl.less" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/less/moneyctrl.less">
+          <file leaf-file-name="moneyproduct.less" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/less/moneyproduct.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3825">
-                  <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.42">
+                  <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
                   <folding>
-                    <element signature="e#149#453#0" expanded="false" />
-                    <element signature="e#1077#1652#0" expanded="false" />
-                    <element signature="e#1724#2088#0" expanded="false" />
-                    <element signature="e#2153#2287#0" expanded="false" />
+                    <element signature="e#149#780#0" expanded="false" />
+                    <element signature="e#853#1329#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="moneyctrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/moneyctrl.js">
+          <file leaf-file-name="moneyproduct.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/moneyproduct.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="false" />
-                  </folding>
+                  <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -77,9 +79,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="less file" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -109,10 +111,12 @@
         <option value="$PROJECT_DIR$/js/productlist.js" />
         <option value="$PROJECT_DIR$/productlist.html" />
         <option value="$PROJECT_DIR$/js/模板.js" />
-        <option value="$PROJECT_DIR$/moneyctrl.html" />
         <option value="$PROJECT_DIR$/js/moneyctrl.js" />
         <option value="$PROJECT_DIR$/less/moneyctrl.less" />
         <option value="$PROJECT_DIR$/moneyproduct.html" />
+        <option value="$PROJECT_DIR$/js/moneyproduct.js" />
+        <option value="$PROJECT_DIR$/moneyctrl.html" />
+        <option value="$PROJECT_DIR$/less/moneyproduct.less" />
       </list>
     </option>
   </component>
@@ -323,7 +327,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17749603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -670,42 +674,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/less/moneyctrl.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2275">
+          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding>
+            <element signature="e#149#776#0" expanded="false" />
+            <element signature="e#1400#1975#0" expanded="false" />
+            <element signature="e#2047#2411#0" expanded="false" />
+            <element signature="e#2476#2610#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/moneyctrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.359447">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/moneyctrl.less">
+    <entry file="file://$PROJECT_DIR$/js/moneyproduct.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3825">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-          <folding>
-            <element signature="e#149#453#0" expanded="false" />
-            <element signature="e#1077#1652#0" expanded="false" />
-            <element signature="e#1724#2088#0" expanded="false" />
-            <element signature="e#2153#2287#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/moneyctrl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5757576">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/moneyproduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1245509">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.6934132">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moneyctrl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58562875">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/moneyproduct.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42">
+          <caret line="189" column="19" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
+          <folding>
+            <element signature="e#149#780#0" expanded="false" />
+            <element signature="e#853#1329#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

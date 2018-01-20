@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "variable";
+@import "adapter";
+
+//头部header-----------------------------------
+.header {
+  height: 50px;
+  background-color: @Color;
+
+  .left {
+    float: left;
+    height: 100%;
+    padding-left: 12px;
+    padding-top: 8px;
+    //box-sizing: border-box;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      color: #fff;
+    }
+  }
+
+  .middle {
+    height: 100%;
+    padding: 0 50px;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+      line-height: 50px;
+      font-size: 32/50rem;
+    }
+
+  }
+
+  .right {
+    float: right;
+    height: 100%;
+    padding: 8px;
+
+    img {
+      //图片自动伸缩
+      height: 100%;
+    }
+  }
+}
+
+//主体内容container--------------------------------------------
+.container {
+  background-color: #fff;
+  padding: 10px;
+
+  h3 {
+    font-size: 20px;
+    color: #5a5a5a;
+    line-height: 40px;
+  }
+
+  .info {
+    font-size: 2px;
+    line-height: 30px;
+    color: #999;
+  }
+  .content {
+
+    p {
+      color: #606060;
+    }
+  }
+
+  .content {
+    .wrap {
+
+      img {
+        float: right;
+        width: 120px;
+        height: 120px;
+      }
+    }
+    img {
+      margin: 0 auto;
+      display: block;
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
+//列表list--------------------------------------------------------
+.flist {
+  background-color: #fff;
+
+  ul {
+    width: 140px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+
+    li {
+      border-bottom: 1px dashed #c0c0c0;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 24px;
+
+        span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 0 10px;
+
+          strong {
+            float: right;
+            color: #f27b04;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+//点击购买buy------------------------------------------------
+.buy {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  a {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 90%;
+    height: 30px;
+    background-color: #FF9000;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+//宣传图片see-------------------------------------
+.see {
+  background-color: #fff;
+  padding-top: 20px;
+
+  img {
+
+    width: 100%;
+  }
+}
+
+//发表评论say-------------------------------------------------------
+.comment {
+  background-color: #fff;
+  padding: 10px;
+
+  .tit {
+    padding: 10px;
+    padding-left: 0;
+    font-size: 18px;
+  }
+  .form {
+    height: 120px;
+    border: 2px solid #eceae8;
+    overflow: hidden;
+
+    textarea {
+      height: 70px;
+      width: 100%;
+      padding: 0;
+    }
+    .ctrl {
+      height: 44px;
+      background-color: #FBFBFB;
+
+      #ctl00_ContentBody_Button1 {
+        height: 100%;
+        float: right;
+        background-color: #FF841D;
+        color: #fff;
+        border:none;
+      }
+    }
+
+  }
+
+}
+
+//评论列表title（动态生成）----------------------------------------------------
+.cu-content-pl {
+  .list {
+    ul {
+      width: 100%;
+
+      li {
+        padding: 20px 0;
+
+        .userimg {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+
+        .con {
+          padding-left: 50px;
+
+          .username{
+            float: left;
+            color: #5997c0;
+            font-size: 14px;
+          }
+          .time{
+            float: right;
+            color: #999;
+            font-size: 14px;
+          }
+          .content{
+            color: #606060;
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+//链接link-------------------------------------------------------
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 34px;
+
+  a {
+    float: left;
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    line-height: 34px;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      display: inline-block;
+      height: 15px;
+    }
+  }
+}
+
+//底部footer--------------------------------------------
+.footer {
+  height: 60px;
+
+  p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+
+    .app {
+      color: #f00;
+    }
+  }
+}
