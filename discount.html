@@ -7,7 +7,7 @@
   <title>棠哥慢慢买国内折扣详细列表</title>
   <link rel="icon" href="./tangge.ico">
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-  <link rel="stylesheet" href="./css/moneyproduct.css">
+  <link rel="stylesheet" href="./css/discount.css">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     <!--这里放置真实显示的DOM内容-->
     <!--头部-->
     <div class="header">
-      <a class="left" href='moneyctrl.html'>
+      <a class="left" href='inlanddiscount.html'>
         <span class="mui-icon mui-icon mui-icon-back"></span>
       </a>
       <div class="right">
@@ -37,12 +37,6 @@
       <!--模板引擎-->
     </div>
 
-
-    <!--列表-->
-    <div class="flist">
-      <!--模板引擎-->
-
-    </div>
 
 
     <!--点击购买-->
@@ -96,6 +90,7 @@
 <script type="text/html" id="template_container">
   {{each result v i}}
   <h3>{{v.productName}}</h3>
+  <h4>{{v.productPrice}}</h4>
   <div class="info">
     <span class="name">{{v.productFrom}}</span>
     <span class="time">{{v.productTime}}</span>
@@ -103,20 +98,14 @@
   </div>
   <div class="content">
     <div class="wrap">
-      {{@ v.productImg2}}
+      {{@ v.productImg}}
     </div>
     <p>{{v.productInfo}}</p>
-    <p>{{v.productInfo1}}</p>
-    {{@ v.productImgLg}}
+    {{@ v.productImg}}
   </div>
   {{/each}}
 </script>
 
-
-<!--地址列表-->
-<script type="text/html" id="template_list">
-  {{@ result[0].productCity}}
-</script>
 
 <!--评论-->
 <script type="text/html" id="template_comment">
@@ -129,6 +118,6 @@
 <script src="./lib/jquery-1.12.4.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/para.js"></script>
-<script src="./js/moneyproduct.js"></script>
+<script src="./js/discount.js"></script>
 </body>
 </html>

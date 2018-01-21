@@ -4,10 +4,10 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="UTF-8">
-  <title>棠哥慢慢买国内折扣详细列表</title>
+  <title>棠哥慢慢买国内折扣列表</title>
   <link rel="icon" href="./tangge.ico">
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-  <link rel="stylesheet" href="./css/moneyproduct.css">
+  <link rel="stylesheet" href="./css/inlanddiscount.css">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     <!--这里放置真实显示的DOM内容-->
     <!--头部-->
     <div class="header">
-      <a class="left" href='moneyctrl.html'>
+      <a class="left" href='index.html'>
         <span class="mui-icon mui-icon mui-icon-back"></span>
       </a>
       <div class="right">
@@ -34,43 +34,9 @@
 
     <!--主体内容-->
     <div class="container">
-      <!--模板引擎-->
-    </div>
-
-
-    <!--列表-->
-    <div class="flist">
-      <!--模板引擎-->
-
-    </div>
-
-
-    <!--点击购买-->
-    <div class="buy">
-      <a href="#">前往购买</a>
-    </div>
-
-
-    <!--宣传图片-->
-    <div class="see">
-      <img src="./images/mmbweixin2.png" alt="">
-    </div>
-
-
-    <!--发表评论-->
-    <!--<div class="say">-->
-    <!--<div class="title">发表评论</div>-->
-    <!--<div class="tab">-->
-    <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
-    <!--<div class="buttom">-->
-    <!--<button>发表评论</button>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--评论-->
-    <div class="comment">
-      <!--模板引擎-->
+      <ul class="clearfix">
+        <!--模板引擎-->
+      </ul>
     </div>
 
 
@@ -92,43 +58,26 @@
 </div>
 
 <!--模板引擎-->
-<!--主体-->
 <script type="text/html" id="template_container">
   {{each result v i}}
-  <h3>{{v.productName}}</h3>
-  <div class="info">
-    <span class="name">{{v.productFrom}}</span>
-    <span class="time">{{v.productTime}}</span>
-    <span class="author">{{v.productTips}}</span>
-  </div>
-  <div class="content">
-    <div class="wrap">
-      {{@ v.productImg2}}
-    </div>
-    <p>{{v.productInfo}}</p>
-    <p>{{v.productInfo1}}</p>
-    {{@ v.productImgLg}}
-  </div>
+  <li class="border-img">
+    <a href="discount.html?productid={{v.productId}}">
+      <div class="img">{{@ v.productImg}}</div>
+      <div class="title">{{v.productName}}*2</div>
+      <div class="subtit">{{v.productPrice}}</div>
+      <div class="info">
+        <div class="mall">{{v.productFrom}} | {{v.productTime}}</div>
+      </div>
+    </a>
+  </li>
   {{/each}}
 </script>
-
-
-<!--地址列表-->
-<script type="text/html" id="template_list">
-  {{@ result[0].productCity}}
-</script>
-
-<!--评论-->
-<script type="text/html" id="template_comment">
-  {{@ result[0].productComment}}
-</script>
-
 
 <!--<script src="./lib/zepto/zepto.min.js"></script>-->
 <script src="./lib/mui/js/mui.min.js"></script>
 <script src="./lib/jquery-1.12.4.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/para.js"></script>
-<script src="./js/moneyproduct.js"></script>
+<script src="./js/inlanddiscount.js"></script>
 </body>
 </html>
