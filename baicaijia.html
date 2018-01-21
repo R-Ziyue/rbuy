@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>棠哥慢慢买白菜价</title>
+  <link rel="icon" href="./tangge.ico">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <!--这里放置真实显示的DOM内容-->
+    <!--头部-->
+    <div class="header">
+      <a class="left" href='index.html'>
+        <span class="mui-icon mui-icon mui-icon-back"></span>
+      </a>
+      <div class="right">
+        <a href="#">
+          <img src="./images/header_app.png" alt="">
+        </a>
+      </div>
+      <div class="middle">
+        <h1>
+          白菜价-淘宝内部券
+        </h1>
+      </div>
+
+    </div>
+
+    <!--商品内容-->
+    <div class="content">
+      <ul>
+        <!--模板引擎-->
+      </ul>
+    </div>
+
+
+    <!--链接-->
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+</div>
+
+<!--模板引擎-->
+
+<!--商品列表导航-->
+<script type="text/html" id="template_content">
+  {{each result v i}}
+  <li class="ui-border-tb ">
+    <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx"
+       target="_blank"></a>
+    <div class="pic">
+      {{@ v.productImg}}
+    </div>
+    <div class="inf">
+      <div class="i">
+        <div class="t">{{@ v.productName}}</div>
+        <div class="pr"><i>券后</i>{{@ v.productPrice}}
+        </div>
+      </div>
+      <div class="o">
+        {{@ v.productCouponRemain}}
+        <div class="b clearfix">
+          <div class="q">
+            {{@ v.productCoupon}}
+          </div>
+          <div class="g">{{@ v.productHref}}</div>
+        </div>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+
+<!--<script src="./lib/zepto/zepto.min.js"></script>-->
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/jquery-1.12.4.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/para.js"></script>
+<script src="./js/baicaijia.js"></script>
+</body>
+</html>
