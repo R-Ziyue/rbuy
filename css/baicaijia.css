@@ -224,6 +224,12 @@ textarea {
 img {
   display: block;
 }
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 !important;
+}
 /* 屏幕的适配 */
 @media (min-width: 320px) {
   html {
@@ -322,6 +328,10 @@ img {
 .header .right img {
   height: 100%;
 }
+.nav .mui-scroll .mui-active {
+  color: #e4393c !important;
+  border-bottom: 2px solid #e4393c !important;
+}
 .content ul {
   background-color: #f7f7f7;
 }
@@ -408,11 +418,13 @@ img {
   display: block;
   text-align: center;
   height: 100%;
+  width: 100%;
   font-size: 12px;
   color: #fff;
   font-style: normal;
   line-height: 100%;
   font-weight: 700;
+  position: absolute;
 }
 .content ul li .inf .o .bar b {
   overflow: hidden;

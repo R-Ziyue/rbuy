@@ -4,9 +4,10 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="UTF-8">
-  <title>棠哥慢慢买省钱控</title>
+  <title>棠哥慢慢买优惠券</title>
   <link rel="icon" href="./tangge.ico">
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/coupon.css">
 </head>
 <body>
 
@@ -25,11 +26,19 @@
       </div>
       <div class="middle">
         <h1>
-          省钱控 - 最新优惠
+          优惠劵
         </h1>
       </div>
 
     </div>
+
+    <!--主体部分-->
+    <div class="main">
+      <ul class='clearfix'>
+        <!--模板引擎-->
+      </ul>
+    </div>
+
 
 
 
@@ -53,9 +62,11 @@
 <!--模板引擎-->
 
 <!--商品列表导航-->
-<script type="text/html" id="template_content">
+<script type="text/html" id="template_main">
   {{each result v i}}
-
+  <li>
+    <a href="{{v.couponLink}}?couponid={{v.couponId}}"><img src="{{v.couponImg}}" alt="">{{v.couponTitle}}</a>
+  </li>
   {{/each}}
 </script>
 
@@ -70,5 +81,6 @@
 <script src="./lib/jquery-1.12.4.min.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/para.js"></script>
+<script src="./js/coupon.js"></script>
 </body>
 </html>

@@ -17,44 +17,22 @@ $(function () {
     bounce: true //是否启用回弹
   });
 
-
 //2.点击返回顶部
-  $('.top').on("tap", function () {
-    mui('.mui-scroll-wrapper.zhu').scroll().scrollTo(0,0,100);//100毫秒滚动到顶
+  $('.top').on("click", function () {
+    mui('.mui-scroll-wrapper').scroll().scrollTo(0, 0, 100);//100毫秒滚动到顶
   })
 
-//  动态渲染页面  生成导航的滑动区域
-  var titleId=getSearch('titleid')||0;//从地址栏获取
-
+  //动态渲染页面
   $.ajax({
     type:'get',
-    url: "http://" + ip + ":9090/api/getbaicaijiatitle",
+    url: "http://" + ip + ":9090/api/getcoupon",
     success:function (info) {
       console.log(info);
-      info.result[titleId].now=1;
-      $('.nav_list').html(template('template_nav',info));
-
+      $('.main ul').html(template('template_main',info));
     }
+
 
   })
-
-//动态渲染页面  获取数据  有默认值
-  //总页数
-  $.ajax({
-    type: 'get',
-    url: 'http://' + ip + ':9090/api/getbaicaijiaproduct',
-    data: {
-      titleid:titleId,
-    },
-    success: function (info) {
-      //console.log(info);
-      $('.content ul').html(template('template_content', info));
-    }
-  });
-
-  // 监听tap事件，解决 a标签 不能跳转页面问题
-   mui('body').on('tap','a',function(){document.location.href=this.href;});
-
 
 
 

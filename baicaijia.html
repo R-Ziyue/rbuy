@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="mui-scroll-wrapper">
+<div class="mui-scroll-wrapper zhu">
   <div class="mui-scroll">
     <!--这里放置真实显示的DOM内容-->
     <!--头部-->
@@ -31,6 +31,16 @@
       </div>
 
     </div>
+
+    <!--导航列表-->
+    <div class="nav">
+      <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+        <div class="mui-scroll nav_list">
+          <!--模板引擎-->
+        </div>
+      </div>
+    </div>
+
 
     <!--商品内容-->
     <div class="content">
@@ -59,7 +69,16 @@
 
 <!--模板引擎-->
 
-<!--商品列表导航-->
+<!--滑动导航-->
+<script type="text/html" id="template_nav">
+  {{each result v i}}
+  <a class="mui-control-item {{ 1==v.now?'mui-active':''}} " href="baicaijia.html?titleid={{v.titleId}}">
+    {{v.title}}
+  </a>
+  {{/each}}
+</script>
+
+<!--商品列表-->
 <script type="text/html" id="template_content">
   {{each result v i}}
   <li class="ui-border-tb ">

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-//我们项目中自己的一些通用样式
 *,
 ::before,
 ::after {
@@ -44,13 +43,12 @@ textarea {
   line-height: 0;
   clear: both;
 }
-
 img {
   display: block;
-  //此时不需要  要图片自己进行缩放
-  //width: 100%;
 }
-
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
   margin: 0 !important;
 }
