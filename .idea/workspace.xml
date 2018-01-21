@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf3d384e-1e47-4fa8-8a62-9c6ec0c91a58" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baicaijia.html" afterPath="$PROJECT_DIR$/baicaijia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/baicaijia.css" afterPath="$PROJECT_DIR$/css/baicaijia.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bijia.css" afterPath="$PROJECT_DIR$/css/bijia.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/category.css" afterPath="$PROJECT_DIR$/css/category.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/discount.css" afterPath="$PROJECT_DIR$/css/discount.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/inlanddiscount.css" afterPath="$PROJECT_DIR$/css/inlanddiscount.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/moneyctrl.css" afterPath="$PROJECT_DIR$/css/moneyctrl.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/moneyproduct.css" afterPath="$PROJECT_DIR$/css/moneyproduct.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/productlist.css" afterPath="$PROJECT_DIR$/css/productlist.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/baicaijia.js" afterPath="$PROJECT_DIR$/js/baicaijia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/模板.js" afterPath="$PROJECT_DIR$/js/模板.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/baicaijia.less" afterPath="$PROJECT_DIR$/less/baicaijia.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/base.less" afterPath="$PROJECT_DIR$/less/base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/模板.less" afterPath="$PROJECT_DIR$/less/模板.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/模板.html" afterPath="$PROJECT_DIR$/模板.html" />
-    </list>
+    <list default="true" id="bf3d384e-1e47-4fa8-8a62-9c6ec0c91a58" name="默认的" comment="" />
     <ignored path="棠哥慢慢买项目.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +23,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="coupon.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/coupon.html">
+          <file leaf-file-name="couponproduct.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/couponproduct.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6235012">
-                  <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+                <state vertical-scroll-proportion="0.62589926">
+                  <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
                   <folding>
                     <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -57,23 +39,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="coupon.less" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/less/coupon.less">
+          <file leaf-file-name="couponproduct.less" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/less/couponproduct.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.74843556">
-                  <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#183#811#0" expanded="false" />
-                  </folding>
+                <state vertical-scroll-proportion="0.34918648">
+                  <caret line="114" column="22" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="coupon.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/coupon.js">
+          <file leaf-file-name="couponproduct.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/couponproduct.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+                  <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
@@ -138,6 +118,9 @@
         <option value="$PROJECT_DIR$/js/coupon.js" />
         <option value="$PROJECT_DIR$/coupon.html" />
         <option value="$PROJECT_DIR$/less/coupon.less" />
+        <option value="$PROJECT_DIR$/js/couponproduct.js" />
+        <option value="$PROJECT_DIR$/couponproduct.html" />
+        <option value="$PROJECT_DIR$/less/couponproduct.less" />
       </list>
     </option>
   </component>
@@ -389,33 +372,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/模板.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/productlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/模板.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/模板.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -831,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/coupon.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6235012">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        <state vertical-scroll-proportion="-4.7272725">
+          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -841,11 +797,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/coupon.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74843556">
-          <caret line="128" column="17" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+        <state vertical-scroll-proportion="-1.1470588">
+          <caret line="108" column="15" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
           <folding>
             <element signature="e#183#811#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/couponproduct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/couponproduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62589926">
+          <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/couponproduct.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34918648">
+          <caret line="114" column="22" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
