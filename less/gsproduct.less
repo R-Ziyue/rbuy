@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "variable";
+@import "adapter";
+
+//头部header-----------------------------------
+.header {
+  height: 50px;
+  background-color: @Color;
+
+  .left {
+    float: left;
+    height: 100%;
+    padding-left: 12px;
+    padding-top: 8px;
+    //box-sizing: border-box;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 30px;
+      color: #fff;
+    }
+  }
+
+  .middle {
+    height: 100%;
+    padding: 0 50px;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+      line-height: 50px;
+      font-size: 32/50rem;
+    }
+
+  }
+
+  .right {
+    float: right;
+    height: 100%;
+    padding: 8px;
+
+    img {
+      //图片自动伸缩
+      height: 100%;
+    }
+  }
+}
+
+//店铺标题title---------------------------------------
+.title {
+  background-color: #fff;
+
+  .first {
+    height: 40px;
+    padding-right: 40px;
+
+    li {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+      line-height: 40px;
+
+      span {
+        vertical-align: middle;
+        font-size: 16px;
+      }
+      .mui-icon {
+        font-size: 14px;
+        margin-left: 10px;
+      }
+
+    }
+  }
+
+  & > span {
+    position: relative;
+    float: right;
+    height: 40px;
+    width: 40px;
+    color: #808080;
+    z-index: 10;
+    text-align: center;
+    line-height: 50px;
+    border-left: 1px solid #DADADA;
+  }
+
+  //  子选择框
+  //1
+  .one,.two,.three {
+    li {
+      height: 40px;
+      line-height: 40px;
+      border-top: 1px solid #EDEDED;
+      padding-left: 10px;
+      font-size: 16px;
+
+      span{
+        display: block;
+        float: right;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        line-height: 40px;
+        font-size: 40px;
+        color: @Color;
+      }
+    }
+  }
+
+
+
+
+
+
+}
+
+//隐藏的类
+.yin{
+  display: none;
+}
+
+//链接link-------------------------------------------------------
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 34px;
+
+  a {
+    float: left;
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    line-height: 34px;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      display: inline-block;
+      height: 15px;
+    }
+  }
+}
+
+
+//主体商品列表main---------------------------------------------
+.main{
+
+  ul{
+
+
+    li{
+      float: left;
+      height: 250px;
+      width: 50%;
+      background-color: #F1F1F1;
+
+      a{
+        display: block;
+        height: 98%;
+        margin: 4px;
+        //margin-bottom: 0;
+        background-color: #fff;
+        padding: 10px;
+        padding-top: 0;
+
+        .pic{
+          img{
+            display: block;
+            margin: 0 auto;
+            height: 174px;
+            width: 174px;
+          }
+        }
+        .title{
+
+          font-size: 12px;
+          overflow: hidden;
+        }
+        .other{
+
+          .price{
+            float: left;
+            color: #f8601d;
+            font-size: 20px;
+          }
+          .btn{
+            float: right;
+            background-color: #FF9501;
+            padding: 4px 10px;
+            color: #fff;
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+//底部footer--------------------------------------------
+.footer {
+  height: 60px;
+
+  p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+
+    .app {
+      color: #f00;
+    }
+  }
+}

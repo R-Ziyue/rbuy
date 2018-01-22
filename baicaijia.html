@@ -83,7 +83,7 @@
   {{each result v i}}
   <li class="ui-border-tb ">
     <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx"
-       target="_blank"></a>
+       target="_blank" style='position: absolute ;z-index: 666'></a>
     <div class="pic">
       {{@ v.productImg}}
     </div>
@@ -99,7 +99,9 @@
           <div class="q">
             {{@ v.productCoupon}}
           </div>
-          <div class="g">{{@ v.productHref}}</div>
+          <div class="g" style='position: relative ;z-index: 999'>
+              {{@ v.productHref}}
+          </div>
         </div>
       </div>
     </div>
