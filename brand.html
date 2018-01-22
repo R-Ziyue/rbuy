@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <title>棠哥慢慢买品牌大全页面</title>
+  <link rel="icon" href="./tangge.ico">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/brand.css">
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <!--这里放置真实显示的DOM内容-->
+    <!--头部-->
+    <div class="header">
+      <a class="left" href='index.html'>
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      <div class="right">
+        <img src="./images/header_app.png" alt="">
+      </div>
+    </div>
+
+    <!--搜索-->
+    <div class="search">
+      <button class="right">搜索</button>
+      <div class="si">
+        <input type="text" class="left" placeholder="请输入你想比价的商品">
+      </div>
+    </div>
+
+    <!--导航-->
+    <div class="nav">
+      <div class="left">
+        <a href="index.html">首页</a>
+        >
+        <a href="brandTitle.html">全部分类</a>
+        >
+      </div>
+    </div>
+
+    <!--排行-->
+    <div class="among">
+      <h3>哪个牌子好</h3>
+      <ul>
+        <!--模板引擎-->
+      </ul>
+    </div>
+
+
+    <!--销量排行-->
+    <div class="sales">
+      <h3>销量排行</h3>
+      <ul>
+        <!--模板引擎-->
+      </ul>
+    </div>
+
+    <!--评论-->
+    <div class="common">
+      <h3>最新评论</h3>
+      <ul>
+        <!--模板引擎-->
+      </ul>
+    </div>
+
+    <!--链接-->
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+</div>
+
+<!--模板引擎-->
+
+<!--标题模板-->
+<!--品牌排行-->
+<script type="text/html" id="template_among">
+  {{each result v i}}
+  <li>
+    <span class="mui-icon mui-icon mui-icon-forward"></span>
+    <a href="productlist.html?categoryid=0&amp;pageid=1">
+      <em>{{i+1}}</em>
+      <div class="info">
+        <div class="title mui-ellipsis">
+          {{v.brandName}}
+        </div>
+        <p class="mui-ellipsis">{{v.brandInfo}}</p>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+<!--销量排行-->
+<script type="text/html" id="template_sales">
+  {{each result v i}}
+  <li class="clearfix">
+    <a href="bijia.html?productid={{v.productId}}" >
+      <div class="img">
+        {{@ v.productImg}}
+      </div>
+      <div class="info">
+        <div class="title">
+          {{v.productName}}
+        </div>
+        <div class="price">
+          <em>{{v.productPrice}}</em>
+                <span class="star">
+                  <em class="star5">★★★★★</em>
+                </span>
+        </div>
+        <div class="other">
+          <em>{{v.productQuote}}</em>
+          <em>{{v.productCom}}</em>
+        </div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+<!--评论-->
+<script type="text/html" id="template_common">
+  {{each result v i}}
+
+  <li>
+    <a href="bijia.aspx?id=211698">
+      <div class="title">
+        <div class="img">
+          <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg"> </div>
+        <div class="list">乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</div>
+      </div>
+      <div class="box">
+        <div class="name">
+          {{v.comName}}:
+                <span class="star">
+                  <em class="star5">★★★★★</em>
+                </span>
+          <i>{{v.comTime}}</i>
+        </div>
+        <div class="info">{{v.comContent}}</div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+
+<!--<script src="./lib/zepto/zepto.min.js"></script>-->
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/jquery-1.12.4.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/para.js"></script>
+<script src="./js/brand.js"></script>
+</body>
+</html>

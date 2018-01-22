@@ -1,0 +1,331 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "variable";
+@import "adapter";
+
+//头部header-----------------------------------
+.header {
+  height: 50px;
+  background-color: @Color;
+
+  .left {
+    float: left;
+    height: 100%;
+    padding: 12px;
+    //box-sizing: border-box;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    float: right;
+    height: 100%;
+    padding: 8px;
+
+    img {
+      //图片自动伸缩
+      height: 100%;
+    }
+  }
+}
+
+//搜索search------------------------------------------------
+.search {
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 10px;
+
+  .si {
+    padding-right: 73px;
+    height: 100%;
+
+    .left {
+      width: 100%;
+      height: 100%;
+      background-color: #F1F1F1;
+      border-radius: 15px;
+      padding-left: 20px;
+    }
+  }
+
+  .right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 63px;
+    height: 30px;
+    background-color: @Color;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+  }
+}
+
+//导航nav---------------------------------------------------------
+.nav {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  background-image: linear-gradient(#fff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+
+}
+
+//排行among----------------------------------------------------------
+h3 {
+  height: 40px;
+  padding-left: 10px;
+  background-color: #F3F3F3;
+  line-height: 40px;
+  border: 1px solid #C8C8C8;
+  font-size: 16px;
+  color: #874604;
+}
+
+.among {
+
+  ul {
+
+    li {
+      height: 75px;
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #E7E7E7;
+
+      & > span {
+        margin-top: 16px;
+        color: #A9B7B7;
+        float: right;
+        display: block;
+        font-size: 30px;
+      }
+      em {
+        font-style: normal;
+        display: block;
+        width: 20px;
+        height: 20px;
+        float: left;
+        background-color: #c9c9c9;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+      }
+      &:nth-child(1) em {
+        background-color: #f10e0e;
+      }
+      &:nth-child(2) em {
+        background-color: #ff9314;
+      }
+      &:nth-child(3) em {
+        background-color: #8adf5b;
+      }
+      a {
+        display: block;
+
+        .info {
+          margin-left: 30px;
+
+          .title {
+            font-size: 16px;
+          }
+          p {
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+//销量排行sales---------------------------------------------------------
+.sales {
+
+  ul {
+
+    li {
+      padding: 10px;
+      background-color: #fff;
+      border-bottom: 1px solid #E7E7E7;
+      a {
+        display: block;
+        height: 100%;
+
+        .img {
+          height: 100px;
+          float: left;
+          margin-right: 10px;
+          img {
+            height: 100px;
+            width: 100px;
+          }
+        }
+        .info {
+
+          .title {
+            height: 44px;
+          }
+          .price {
+
+            & > em {
+              float: left;
+              font-size: 18px;
+              color: #ea3900;
+              font-style: normal;
+            }
+            .star {
+              float: right;
+              em {
+                font-style: normal;
+                margin-right: 10px;
+                font-size: 20px;
+                color: #FF9000;
+              }
+            }
+          }
+          .other {
+            margin-top: 30px;
+
+            em {
+              font-size: 12px;
+              font-style: normal;
+              color: #a1a1a1;
+              margin-left: 10px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+//评论common----------------------------------------------
+.common {
+  ul {
+    li {
+      background-color: #fff;
+      padding: 10px;
+      .title {
+
+        .img {
+          float: left;
+          margin-right: 10px;
+
+          img {
+            height: 100px;
+            width: 100px;
+
+          }
+        }
+        .list{
+          font-size: 14px;
+          overflow: hidden;
+          padding-left: 10px;
+          color: #999;
+        }
+      }
+      .box{
+        margin-top: 80px;
+        padding: 10px;
+        background-color: #F8F8F8;
+        border: 1px solid #E7E7E7;
+        position: relative;
+        &:before{
+          content: '';
+          position:absolute;
+          width: 0;
+          height: 0;
+          border-bottom: 8px solid #e7e7e7;
+          border-left:8px solid transparent;
+          border-right:8px solid transparent;
+          top:-8px;
+          left: 39px;
+        }
+        &:after{
+          content: '';
+          position:absolute;
+          width: 0;
+          height: 0;
+          border-bottom: 8px solid #f8f8f8;
+          border-left:8px solid transparent;
+          border-right:8px solid transparent;
+          top:-7px;
+          left: 40px;
+        }
+        .name{
+          color: #4f6900;
+          font-size: 14px;
+          height: 30px;
+          .star {
+            em {
+              font-style: normal;
+              margin-right: 10px;
+              font-size: 20px;
+              color: #FF9000;
+            }
+          }
+          i{
+            float: right;
+            font-size: 12px;
+            color: #999;
+            font-style: normal;
+          }
+
+        }
+        .info{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}
+
+//链接link-------------------------------------------------------
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 34px;
+
+  a {
+    float: left;
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    line-height: 34px;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      display: inline-block;
+      height: 15px;
+    }
+  }
+}
+
+//底部footer--------------------------------------------
+.footer {
+  height: 60px;
+
+  p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+
+    .app {
+      color: #f00;
+    }
+  }
+}
