@@ -1,10 +1,98 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>棠哥慢慢买分类页</title>
+  <link rel="icon" href="./tangge.ico">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/brandTitle.css">
 </head>
 <body>
 
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <!--这里放置真实显示的DOM内容-->
+    <!--头部-->
+    <div class="header">
+      <a class="left" href='index.html'>
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      <div class="right">
+        <img src="./images/header_app.png" alt="">
+      </div>
+    </div>
+
+    <!--搜索-->
+    <div class="search">
+      <button class="right">搜索</button>
+      <div class="si">
+        <input type="text" class="left" placeholder="请输入你想比价的商品">
+      </div>
+    </div>
+
+    <!--导航-->
+    <div class="nav">
+      <div class="left">
+        <a href="index.html">首页</a>
+        >
+        <a href="brandTitle.html">全部分类</a>
+        >
+      </div>
+    </div>
+
+    <!--提示-->
+    <div class="tips">
+      <div class="info">
+        热门品牌排行
+      </div>
+    </div>
+
+
+    <!--分类-->
+    <!--分类标题-->
+    <div class="category">
+      <ul class="mui-table-view title">
+
+      </ul>
+    </div>
+
+
+    <!--链接-->
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+</div>
+
+<!--模板引擎-->
+
+<!--标题模板-->
+<script type="text/html" id="template_title">
+  {{each result v i}}
+  <li class="mui-table-view-cell mui-collapse">
+    <a class="mui-navigate-right btn_son" href="brand.html?brandtitleid={{v.brandTitleId}}" data-id="{{v.titleId}}">{{v.brandTitle}}</a>
+  </li>
+  {{/each}}
+</script>
+
+
+<!--<script src="./lib/zepto/zepto.min.js"></script>-->
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/jquery-1.12.4.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/para.js"></script>
+<script src="./js/brandTitle.js"></script>
 </body>
 </html>

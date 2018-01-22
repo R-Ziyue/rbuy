@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import "normalize";
+@import "base";
+@import "variable";
+@import "adapter";
+
+//头部header-----------------------------------
+.header {
+  height: 50px;
+  background-color: @Color;
+
+  .left {
+    float: left;
+    height: 100%;
+    padding: 12px;
+    //box-sizing: border-box;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    float: right;
+    height: 100%;
+    padding: 8px;
+
+    img {
+      //图片自动伸缩
+      height: 100%;
+    }
+  }
+}
+
+//搜索search------------------------------------------------
+.search {
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 10px;
+
+  .si {
+    padding-right: 73px;
+    height: 100%;
+
+    .left {
+      width: 100%;
+      height: 100%;
+      background-color: #F1F1F1;
+      border-radius: 15px;
+      padding-left: 20px;
+    }
+  }
+
+  .right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 63px;
+    height: 30px;
+    background-color: @Color;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+  }
+}
+
+
+//导航nav---------------------------------------------------------
+.nav {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  background-image: linear-gradient(#fff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+
+
+}
+
+//提示tips--------------------------------------------------
+.tips{
+  height: 52px;
+  background-color: #FFF;
+  padding: 8px 10px;
+
+  .info{
+    height: 36px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    line-height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #874604;
+
+  }
+}
+
+
+
+
+//不同的部分
+.category{
+
+  &>ul{
+    border: 1px solid #ccc;
+  }
+
+  &>ul>li{
+    border-bottom: 1px solid #ccc;
+    background-color: #ededed;
+    font-size: 16px;
+    font-weight: 700;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+//链接link-------------------------------------------------------
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 34px;
+
+  a {
+    float: left;
+    display: block;
+    width: 33.33%;
+    text-align: center;
+    height: 100%;
+    line-height: 34px;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    &:last-child {
+      border-right: none;
+    }
+    img {
+      display: inline-block;
+      height: 15px;
+    }
+  }
+}
+
+//底部footer--------------------------------------------
+.footer {
+  height: 60px;
+
+  p{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 0px;
+
+    .app{
+      color: #f00;
+    }
+  }
+}
